@@ -1,0 +1,67 @@
+.viewed-collapse {
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.viewed-section {
+  margin-top: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #f8fafc;
+  padding: 1rem;
+  width: 200px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.viewed-section:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  background-color: #ffffff;
+}
+.viewed-header {
+  font-size: 1.1rem;
+  font-weight: 100;
+  padding: 0.3rem 0;
+  border-bottom: 1px solid #ccc;
+  user-select: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.viewed-list {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+}
+
+.viewed-card {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  padding: 0.3rem;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  transition: background 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.viewed-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  background-color: #e6f7ff;
+}
+.viewed-list {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+  overflow-y: auto;
+  max-height: 300px;
+}

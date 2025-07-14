@@ -1,0 +1,103 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-50px) scale(0.9);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.modal-overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0) scale(1);
+}
+
+.modal-overlay.hide {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-50px) scale(0.9);
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  max-width: 1000px;
+  width: 90%;
+}
+
+.modal-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.modal-body {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.modal-left {
+  flex: 1;
+  min-width: 200px;
+}
+
+.modal-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.modal-right {
+  flex: 2;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.close-btn {
+  margin-top: 1rem;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.close-btn:hover {
+  background: #c0392b;
+}
+
+.close-btn:active {
+  background: #a93226;
+}
+.like-btn {
+  margin-top: 1rem;
+  background: #00bd7d;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.like-btn:hover {
+  background: #ff8d35;
+}
